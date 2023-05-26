@@ -1,15 +1,16 @@
 # Maintainer: David K david.dk949@gmail.com
-pkgname=bldr
+_pkgname=bldr
+pkgname="${_pkgname}-949sd"
 pkgver="unknown"
 pkgrel=0
 pkgdesc="Execute build commands from anywhere in the project."
 arch=('x86_64')
-url="https://github.com/dk949/$pkgname"
+url="https://github.com/dk949/$_pkgname"
 license=('MIT')
 makedepends=('go')
 optdepends=()
 provides=('bldr')
-source=("git+$url")
+source=("$pkgname::git+$url")
 md5sums=() #autofill using updpkgsums
 sha256sums=('SKIP')
 
